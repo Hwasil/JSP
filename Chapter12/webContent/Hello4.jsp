@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
     
-<!-- 선언문 작성 -->
+<!-- 선언문 작성 (스크립트릿) -->
 <%! 
 	String name = "오화실";
 	public String getName() {
@@ -24,7 +24,7 @@
 	<body>
 					<!-- 표현식 -->
 		<h1>안녕하세요.  <%= name %>님!</h1>
-		<h2>당신의 나이는 <%= age %>살 입니다.</h2>
+		<h2>당신의 나이는 <%=  %>살 입니다.</h2> <!-- age -->
 		<h1>키는 <%= 170 %>입니다.</h1>
 		<h1>나이 + 10은 <%-- <%= Integer.parseInt(age) %> --%> 입니다.</h1>
 	</body>
